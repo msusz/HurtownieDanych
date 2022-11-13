@@ -82,6 +82,8 @@ from sales
          inner join DimOrganization do on do.OrganizationKey = sales.OrganizationKey
 order by percentile;
 
+
+
 -- zad 6
 
 with sales as (select sum(Amount) as amount, stdev(Amount) as stdev, OrganizationKey
